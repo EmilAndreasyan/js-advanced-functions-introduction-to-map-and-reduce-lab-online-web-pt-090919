@@ -17,15 +17,19 @@ function mapToNoChange(sourceArray){
 }
 
 function mapToDouble(sourceArray){
-  let newArray = []
-  newArray.push(sourceArray * 2)
-  return newArray
+  let result = []
+  for(let i=0; i<sourceArray.length; i++){
+    result.push(sourceArray[i] * 2)
+  }
+  return result
 }
 
 function mapToSquare(sourceArray){
-  let newArray = []
-  newArray.push(sourceArray * sourceArray)
-  return newArray
+   let result = []
+  for(let i=0; i<sourceArray.length; i++){
+    result.push(sourceArray[i] * sourceArray[i])
+  }
+  return result
 }
 
 
