@@ -4,6 +4,7 @@ function mapToNegativize (sourceArray) {
   for(let i = 0; i < sourceArray.length; i++){
     result.push(sourceArray[i] * (-1))
   }
+  return result;
 }
 mapToNegativize(1, 2, 3, -9)
 
