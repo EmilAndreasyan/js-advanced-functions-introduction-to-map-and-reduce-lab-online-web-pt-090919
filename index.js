@@ -2,16 +2,18 @@
 function mapToNegativize (sourceArray) {
   let result = []
   for(let i = 0; i < sourceArray.length; i++){
-    result.push(-1 * sourceArray[i])
+    result.push(sourceArray[i] * -1)
   }
   return result;
 }
 mapToNegativize(1, 2, 3, -9)
 
 function mapToNoChange(sourceArray){
-  let newArray = []
-  newArray.push(sourceArray)
-  return newArray
+  let result = []
+  for(let i = 0; i < sourceArray.length; i++){
+    result.push(sourceArray[i])
+  }
+  return result
 }
 
 function mapToDouble(sourceArray){
